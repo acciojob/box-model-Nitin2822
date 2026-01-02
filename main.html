@@ -1,5 +1,53 @@
-<div class="container">
-    <div class="green"></div>
-    <div class="yellow"></div>
-    <div class="red"></div>
-</div>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Box Model</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            width: 300px;
+            padding: 20px;
+            border: 2px solid black;
+            border-radius: 25px;
+            text-align: center;
+            background-color: #e0e0e0;
+        }
+
+        .green, .yellow, .red {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: inline-block;
+            margin: 5px;
+        }
+
+        .green {
+            background-color: green;
+        }
+
+        .yellow {
+            background-color: yellow;
+        }
+
+        .red {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="green"></div>
+        <div class="yellow"></div>
+        <div class="red"></div>
+    </div>
+
+</body>
+</html>
